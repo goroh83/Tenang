@@ -6,6 +6,12 @@
     url('../fonts/NoirPro-Medium.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'NoirLight';
+    src: url('../fonts/NoirPro-Light.woff2') format('woff2'),
+    url('../fonts/NoirPro-Light.woff') format('woff');
+}
+
 * {
     --main-text-color: #ffffff;
     --spacing-header: 0.3em;
@@ -27,7 +33,6 @@ body {
     background-image: url("../img/hero1-1920.jpg");
     background-size: cover;
     height: 100vh;
-    z-index: -5;
 }
 
 a {
@@ -49,6 +54,7 @@ li {
     position: relative;
     display: flex;
     align-items: center;
+
 }
 
 .top-bar__list {
@@ -59,30 +65,34 @@ li {
 .top-bar__list li {
     display: inline;
     padding-right: 20px;
-    float: left;
 }
 
 .top-bar__left {
-    flex:1;
+    flex: 1;
     text-transform: uppercase;
     margin-left: 100px;
 }
 
 .top-bar__right {
-    flex:1;
+    flex: 1;
     position: absolute;
     right: 0;
+    margin-top: 0;
+    font-size: 0.75em;
+    font-family: 'NoirLight', sans-serif;
 }
 
-.top-bar__right ul {}
+.top-bar__right > li {
+    margin-right: 30px;
+}
 
-.top-bar__right {
+.top-bar__right li:last-child {
     margin-right: 0;
-    font-size: 0.75em;
+    padding-right: 0;
 }
 
 .lang__in {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 nav {
@@ -147,4 +157,47 @@ nav > ul > li {
     transform: translate(-50%, -50%);
 }
 
+.social-icons {
+    flex: 1;
+    position: absolute;
+    left: 50px;
+    bottom: 38px;
+    transform: translate(-50%, -50%);
+}
+
+.social-icons ul {
+    padding-left: 0;
+}
+
+.social-icons ul li a {
+    padding: 0px;
+}
+
+.social-icons ul li:first-child {
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    height: 20px;
+    width: auto;
+}
+
+.btn {
+    letter-spacing: 0.15em;
+    display: inline-block;
+    margin: auto auto;
+}
+
+.btn-book {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.btn-book a {
+    padding: 3px 8px;
+    border: solid 1px #ffffff;
+    text-transform: uppercase;
+    font-size: 0.55em;
 }
