@@ -1,0 +1,150 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'NoirMedium';
+    src: url('../fonts/NoirPro-Medium.woff2') format('woff2'),
+    url('../fonts/NoirPro-Medium.woff') format('woff');
+}
+
+* {
+    --main-text-color: #ffffff;
+    --spacing-header: 0.3em;
+}
+
+body {
+    position: relative;
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-family: 'NoirMedium', sans-serif;
+}
+
+.wrapper {
+    margin: auto 100px;
+    position: relative;
+}
+
+#hero {
+    background-image: url("../img/hero1-1920.jpg");
+    background-size: cover;
+    height: 100vh;
+    z-index: -5;
+}
+
+a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+h1.main-header {
+    position: absolute;
+    left: -100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.top-bar {
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar__list {
+    letter-spacing: 0.15em;
+    flex: 1;
+}
+
+.top-bar__list li {
+    display: inline;
+    padding-right: 20px;
+    float: left;
+}
+
+.top-bar__left {
+    flex:1;
+    text-transform: uppercase;
+    margin-left: 100px;
+}
+
+.top-bar__right {
+    flex:1;
+    position: absolute;
+    right: 0;
+}
+
+.top-bar__right ul {}
+
+.top-bar__right {
+    margin-right: 0;
+    font-size: 0.75em;
+}
+
+.lang__in {
+    opacity: 0.5;
+}
+
+nav {
+    border: solid 1px red;
+    max-width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-hide {
+    left: -50%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul {
+    display: inline-block;
+    margin: auto auto;
+    text-align: center;
+    padding-left: 0;
+}
+
+nav > ul > li {
+    line-height: 3vh;
+    text-transform: uppercase;
+    line-height: 3em;
+}
+
+.side-bar {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    max-width: 100px;
+}
+
+.burger {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.brand {
+    flex: 1;
+    position: absolute;
+    left: 0;
+    top: 2em;
+    height: 100vh;
+    max-width: 100px;
+
+}
+
+.logo {
+    height: 120px;
+    position: absolute;
+    left: 50px;
+    top: 38px;
+    transform: translate(-50%, -50%);
+}
+
+}
