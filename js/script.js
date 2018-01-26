@@ -8,6 +8,10 @@ const burger2 = document.querySelector('.bar2');
 const burger3 = document.querySelector('.bar3');
 const burger4 = document.querySelector('.bar4');
 
+const mapSmall = document.querySelector('.map-sm');
+const mapLarge = document.querySelector('.map-lg');
+
+
 
 toggle.addEventListener('click', () => {
     burger1.classList.toggle('bar1active');
@@ -16,4 +20,16 @@ toggle.addEventListener('click', () => {
     burger4.classList.toggle('bar4active');
     navigation.classList.toggle('unhide');  
     navigationList.classList.toggle('nav-unhide');
+});
+
+mapSmall.addEventListener('click', () => {
+    mapLarge.classList.toggle('map-lg-show');
+    mapSmall.classList.toggle('map-sm-hide');
+});
+
+mapLarge.addEventListener('click', () => {
+    mapLarge.classList.toggle('map-lg-show');
+    setTimeout( () => {
+        mapSmall.classList.toggle('map-sm-hide'); 
+    }, 400);   
 });

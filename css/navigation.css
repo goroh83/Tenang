@@ -17,7 +17,7 @@ header nav {
     -webkit-transform: translate(-100%, -50%);
     transform: translate(-100%, -50%);
     list-style-type: none;
-    font-size: 1em5em;
+    font-size: 1em;
     -webkit-transition: all 0.75s cubic-bezier(.51, .92, .24, 1.15);
     transition: all 0.75s cubic-bezier(.51, .92, .24, 1.15);
     z-index: 50;
